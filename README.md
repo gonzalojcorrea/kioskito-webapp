@@ -7,8 +7,9 @@ This project provides a simple React-based admin dashboard with a professional l
 - Left sidebar with categories:
   - Inventario
   - Ventas
-  - Concesiones
+- Concesiones
 - Configuration section at the bottom of the dashboard
+- Login screen that authenticates against the [Kioskito API](https://github.com/gonzalojcorrea/kioskito-api)
 
 ## Getting Started
 
@@ -18,3 +19,5 @@ Install dependencies and start the development server:
 npm install
 npm start
 ```
+
+On launch the application displays a login form. Credentials are sent via `POST` to the API's `/login` endpoint. On successful login, the admin dashboard is shown.
