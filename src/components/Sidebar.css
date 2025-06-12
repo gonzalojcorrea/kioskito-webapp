@@ -1,0 +1,23 @@
+.sidebar {
+  width: 220px;
+  background-color: #2f3e46;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  padding-top: 20px;
+}
+
+.sidebar ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.sidebar li {
+  padding: 15px 20px;
+  cursor: pointer;
+}
+
+.sidebar li:hover {
+  background-color: #354f52;
+}
