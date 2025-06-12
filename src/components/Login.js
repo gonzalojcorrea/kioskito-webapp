@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import './Login.css';
+import { API_URL } from '../config';
+import '../styles/Login.css';
 
 function Login({ onSuccess }) {
   const [email, setEmail] = useState('');
@@ -10,7 +11,7 @@ function Login({ onSuccess }) {
     e.preventDefault();
     setError(null);
     try {
-      const response = await fetch('https://kioskito-api.onrender.com/login', {
+      const response = await fetch(`${API_URL}/login`, {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({ email, password })
@@ -29,7 +30,7 @@ function Login({ onSuccess }) {
 
   return (
     <div className="login-container">
-      <h2>Iniciar Sesión</h2>
+      <h2><i className="fas fa-sign-in-alt"></i> Iniciar Sesión</h2>
       <form onSubmit={handleSubmit}>
         <div>
           <label htmlFor="email">Email:</label>

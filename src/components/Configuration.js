@@ -1,5 +1,5 @@
 import React from 'react';
-import './Configuration.css';
+import '../styles/Configuration.css';
 
 function Configuration() {
   return (

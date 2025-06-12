@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import Sidebar from './components/Sidebar';
 import Configuration from './components/Configuration';
 import Login from './components/Login';
-import './App.css';
+import './styles/App.css';
 
 function App() {
   const [loggedIn, setLoggedIn] = useState(false);
