@@ -1,7 +1,8 @@
 :root {
-  --primary-color: #37474f;
-  --secondary-color: #00838f;
-  --accent-color: #4caf50;
-  --bg-color: #eceff1;
+  /* Dark palette based on blacks and greys */
+  --primary-color: #1a1a1a;
+  --secondary-color: #333333;
+  --accent-color: #4d4d4d;
+  --bg-color: #000000;
   --text-color: #ffffff;
 }
